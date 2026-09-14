@@ -270,6 +270,10 @@ New Google Ads campaigns, ad groups and ads are created **paused**, so nothing g
 - **Granular permissions** - Control read vs write access
 - **Data encryption** - All data transmitted securely
 
+## Pricing
+
+The Google Ads MCP server is included in every InsightfulPipe plan, together with all other MCP servers and the CLI. Plans start at $29.99/month with a 7-day free trial. See [insightfulpipe.com/pricing](https://insightfulpipe.com/pricing) for current plans.
+
 ## Ready-Made Skills and Prompts
 
 - [Claude skills for Google Ads](https://insightfulpipe.com/marketing-claude-skills/google-ads) — ready-made skills that run on your connected data
