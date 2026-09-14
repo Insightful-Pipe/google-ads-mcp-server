@@ -1,0 +1,6 @@
+campaign_id,campaign_name,status,impressions,clicks,ctr,conversions,cost,cpc,roas
+123456789,Brand Campaign,ENABLED,245000,12500,5.10%,850,4250.00,0.34,4.2
+123456790,Search - Products,ENABLED,189000,9400,4.97%,620,3800.00,0.40,3.8
+123456791,Display Remarketing,ENABLED,520000,8200,1.58%,340,2100.00,0.26,2.9
+123456792,Shopping - All Products,ENABLED,312000,15600,5.00%,1200,5600.00,0.36,5.1
+123456793,Performance Max,ENABLED,680000,22000,3.24%,1850,7200.00,0.33,4.8
