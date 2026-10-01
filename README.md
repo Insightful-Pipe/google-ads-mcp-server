@@ -3,6 +3,7 @@
 [![MCP Compatible](https://img.shields.io/badge/MCP-Compatible-blue)](https://insightfulpipe.com/mcp-servers/google-ads)
 [![Insightful Pipe](https://img.shields.io/badge/Insightful_Pipe-MCP_Servers-purple)](https://insightfulpipe.com/mcp-servers)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Listed on MCP Market](https://mcpmarket.com/badge/server/google-ads-20.svg)](https://mcpmarket.com/server/google-ads-20?utm_source=readme&utm_medium=badge)
 
 > **Connect Google Ads to AI assistants for advertising analytics and campaign management.**
 
