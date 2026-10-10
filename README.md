@@ -80,15 +80,20 @@ gemini mcp add --transport http google-ads https://google-ads.insightfulmcp.com/
 
 ## Available Actions
 
-87 actions: 28 read, 59 write.
+99 actions: 37 read, 62 write.
 
-### Read Actions (28)
+### Read Actions (37)
 
 <details>
-<summary>Show all 28 read actions</summary>
+<summary>Show all 37 read actions</summary>
 
 | Action | Description |
 |--------|-------------|
+| `account_performance_report` | Account performance for a date range: clicks, cost, impressions, conversions and all conversions |
+| `ad_performance_report` | Ad performance for a date range: status, clicks, cost, impressions and conversions per ad |
+| `bidding_strategy_report` | Portfolio bidding strategy performance for a date range: type, status, clicks, cost, cost per conversion, impressions, average CPC and conversions |
+| `campaign_performance_report` | Campaign performance for a date range: status, bidding strategy type, clicks, cost, impressions, conversions and all conversions |
+| `dsa_search_terms_report` | Dynamic Search Ads search terms: headline and landing page served, clicks, cost, impressions and conversions |
 | `gaql` | Execute a GAQL (Google Ads Query Language) query |
 | `generate_keyword_ideas` | Generate keyword ideas from seed keywords or URL using Keyword Planner |
 | `get_account_info` | Customer account information and settings |
@@ -116,22 +121,26 @@ gemini mcp add --transport http google-ads https://google-ads.insightfulmcp.com/
 | `get_topics` | Topic targeting performance data |
 | `get_user_interests` | User interest categories and availability |
 | `get_user_locations` | User location-based performance data |
+| `keyword_performance_report` | Keyword performance for a date range: status, first-page, first-position and top-of-page CPC estimates |
+| `list_bidding_strategies` | List portfolio bidding strategies with type, status, targets, bid limits and attached campaign counts |
+| `list_conversion_actions` | List conversion actions (id, name, type, category, status); pass conversion_action_id for one with its tag snippets |
+| `search_terms_report` | Search terms that triggered ads: match type, clicks, cost, impressions and conversions |
 | `suggest_geo_targets` | Search for geo target constants by name (city, postal code, region) to get IDs for location targeting |
 
 </details>
 
-### Write Actions (59)
+### Write Actions (62)
 
 <details>
-<summary>Show all 59 write actions</summary>
+<summary>Show all 62 write actions</summary>
 
 | Action | Description |
 |--------|-------------|
 | `add_audience_targeting` | Target a user list (remarketing audience) with an ad group |
 | `add_call_asset` | Add a phone call asset to the account (shows phone number with ads) |
-| `add_callout_asset` | Add callout text snippets to a campaign (e.g., 'Free Shipping', '24/7 Support') |
+| `add_callout_asset` | Add callout text snippets to the account or to a campaign (e.g., 'Free Shipping', '24/7 Support') |
 | `add_demographic_targeting` | Add age and/or gender demographic targeting to an ad group |
-| `add_dsa_webpage_targeting` | Add a webpage-targeting criterion to a DSA ad group (incl |
+| `add_dsa_webpage_targeting` | Add a webpage-targeting criterion to a DSA ad group (incl. page-feed label targeting) |
 | `add_keywords` | Add keywords to an ad group |
 | `add_label` | Create a new label for organizing campaigns, ad groups, and ads |
 | `add_lead_form_asset` | Add a lead form to a campaign (users submit info directly from the ad) |
@@ -148,6 +157,7 @@ gemini mcp add --transport http google-ads https://google-ads.insightfulmcp.com/
 | `create_app_campaign` | Create an App campaign with its initial App ad group (always created as PAUSED) |
 | `create_app_deep_link_asset` | Create an app deep link asset for App ads |
 | `create_asset_group` | Add an asset group to an existing Performance Max campaign |
+| `create_bidding_strategy` | Create a portfolio bidding strategy (Target CPA, Target ROAS, Maximize Conversions or Maximize Conversion Value) that campaigns share |
 | `create_campaign` | Create a new campaign (always created as PAUSED) |
 | `create_conversion_action` | Create a conversion action to track valuable user actions |
 | `create_display_campaign` | Create a Display campaign with ad group and responsive display ad in one atomic request |
@@ -178,7 +188,9 @@ gemini mcp add --transport http google-ads https://google-ads.insightfulmcp.com/
 | `update_app_ad` | Update an existing App ad's inline text and referenced assets |
 | `update_asset_group` | Update a Performance Max asset group: name, landing pages, or status (enabled, paused, removed) |
 | `update_asset_group_signals` | Add or remove audience and search theme signals on an existing asset group |
-| `update_campaign` | Update a campaign: name, dates, budget, bid targets, URL settings, or status (enabled, paused, removed) |
+| `update_bidding_strategy` | Update a portfolio bidding strategy: name, target, bid limits, or remove it |
+| `update_campaign` | Update a campaign: name, dates, budget, bidding strategy and targets, network settings, geo target type, URL settings, or status (enabled, paused, removed) |
+| `update_campaign_targeting` | Add or remove the locations and languages a campaign targets |
 | `update_conversion_action` | Update an existing conversion action's settings |
 | `update_keywords` | Update existing keywords (status, bids) |
 | `update_responsive_search_ad` | Update an existing responsive search ad's headlines, descriptions, or URLs |
